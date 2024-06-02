@@ -25,7 +25,7 @@ const Navbar = () => {
     <div>
    <nav className="navbar navbar-expand-lg navbar-light bg-light" >
     <ul></ul>
-  <Link className="navbar-brand" to="/">Blog Application</Link>
+  <Link className="navbar-brand" to="/"> <span className='text-white'>Blog Application</span></Link>
   <li className="nav-item active"style={{listStyle:"none"}}>
 
         <Link className="nav-link" to="/" style={{marginLeft:"30px",fontWeight:"bold",color:"white"}}>Home</Link>
@@ -56,7 +56,7 @@ const Navbar = () => {
       </li>
     
       <li className="nav-item active" style={{listStyle:"none"}}>
-<Link className="nav-link" to="/setting" style={{marginRight:"50px",fontWeight:"bold"}}>   <CiSettings style={{fontSize:"25px",fontWeight:"bold",marginRight:"10px",fontFamily:"calibri",color:"white"}} />   Setting</Link>
+<Link className="nav-link" to="/setting" style={{marginRight:"50px",fontWeight:"bold"}}>   <CiSettings style={{fontSize:"25px",fontWeight:"bold",marginRight:"10px",fontFamily:"calibri",color:"white"}} /> <span className='text-white'> Setting</span></Link>
 
       </li>
     </ul>
