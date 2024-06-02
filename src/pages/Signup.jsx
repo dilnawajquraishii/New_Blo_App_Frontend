@@ -21,7 +21,7 @@ const Signup = () => {
         console.log(obj)
         
 
-        let req= await fetch('http://localhost:8080/register',{
+        let req= await fetch('https://new-blog-app-backend.onrender.com/register',{
             method:'POST',
             headers:{
                 "Content-Type":"application/json"

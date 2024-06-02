@@ -13,7 +13,7 @@ const Home = () => {
   // let imageRef=useRef();
   const [post, setpost] = useState([]);
   const allpost = async () => {
-    let res = await fetch('http://localhost:8080/post/allusersPosts')
+    let res = await fetch('https://new-blog-app-backend.onrender.com/post/allusersPosts')
     let data = await res.json()
     setpost(data.allposts)
     console.log(data.allposts)
@@ -59,7 +59,7 @@ const Home = () => {
     }
     console.log(obj)
     
-      let res=await fetch('http://localhost:8080/post/create',{
+      let res=await fetch('https://new-blog-app-backend.onrender.com/post/create',{
       method:'POST',
         headers:{
           "Content-Type":"application/json"
@@ -77,7 +77,7 @@ const Home = () => {
       <div className='col-2 bg-warning d-flex justify-content-center'>
         <Sidebar setclick={setclick} click={click} />
       </div>
-      <div className='col-10 bg-success'>
+      <div className='col-10  home-post'>
         <div className='row row-cols-2 pe-4 d-flex justify-content-center row mt-3 ms-5 gap-5' style={{ display: "flex", justifyContent: "space-evenly" }}>
           {post.map((ele) => {
             return <div className="card  " style={{ height:"25rem",width: '19.5rem', gap: "10px", marginTop: "20px" }}>

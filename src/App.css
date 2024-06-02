@@ -1,6 +1,10 @@
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
+.home-post{
+  width:100wv;
+  background-image: url('https://media.istockphoto.com/id/1972964728/photo/3d-like-instagram-icons.webp?b=1&s=170667a&w=0&k=20&c=tofWiZ9UuN4mliJna2dVYypJEcOis19yEqAMSokwwOQ=');
+}
 .loginPage{
   width: 500px;
   margin: auto;
@@ -149,3 +153,7 @@ height:50px;
 .updiv{
   background-image: url('https://cdn.pixabay.com/photo/2016/01/31/16/34/blogging-1171731_640.jpg');
 }
+
+  .navbar {
+    background-image: linear-gradient(to right,rgba(128, 0, 128, 0.808) ,rgba(0, 0, 255, 0.829),rgba(255, 0, 0, 0.651));
+  }

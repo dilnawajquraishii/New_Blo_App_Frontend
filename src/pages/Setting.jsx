@@ -3,8 +3,9 @@ import AuthContext from '../components/context/AuthContext'
 
 const Setting = () => {
     let store=useContext(AuthContext)
-    console.log(store.userDetails._id)
+    console.log(store.userDetails)
     let id=store.userDetails._id
+    console.log(id)
     let nameRef=useRef()
     let passwordRef=useRef()
     // console.log(nameRef.current.value)
@@ -18,7 +19,7 @@ let obj={
 
 console.log(obj)
 
-let updatadata=await  fetch(`http://localhost:8080/update/${id}`,{
+let updatadata=await  fetch(`https://new-blog-app-backend.onrender.com/update/${id}`,{
   method:"PUT",
   headers: {
     "Context-Type":"application/json"
@@ -39,7 +40,7 @@ console.log(res)
         <label htmlFor=''>
             Name:
         </label>
-        <input ref={nameRef} type='text'></input>
+        <input ref={nameRef} type='text'/>
         <label htmlFor=''>
             Password:
         </label>

@@ -62,7 +62,7 @@ const EditSubmit=async(e)=>{
     description:descriptionRef.current.value
   }
   console.log(obj)
-  let res=await fetch(`http://localhost:8080/post/update/${postid}`,{
+  let res=await fetch(`https://new-blog-app-backend.onrender.com/post/update/${postid}`,{
     method:'PUT',
     headers:{
       "Content-Type":"application/json"

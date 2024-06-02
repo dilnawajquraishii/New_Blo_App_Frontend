@@ -18,7 +18,7 @@ const Login = () => {
       password:passwordRef.current.value   
      }
     //  let res=await axios.post('http://localhost:7070/login',obj)
-   let req = await fetch('http://localhost:8080/backendApiLogin',{
+   let req = await fetch('https://new-blog-app-backend.onrender.com/backendApiLogin',{
           method:'POST',
          headers:{
                "Content-Type":"application/json"
